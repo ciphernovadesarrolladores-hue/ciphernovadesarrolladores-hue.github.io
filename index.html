@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Adventures - Space Adventure Game</title>
+    <meta name="description" content="Arcade Adventures - An exciting space adventure arcade game for Android">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00d9ff, #0099ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #a0a0ff;
+            margin-bottom: 2rem;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d0d0ff;
+            margin-bottom: 3rem;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .badge {
+            background: rgba(0, 217, 255, 0.1);
+            border: 2px solid #00d9ff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            color: #00d9ff;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #00d9ff, #0099ff);
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 217, 255, 0.5);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 217, 255, 0.5);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #00d9ff;
+        }
+        
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #a0a0ff;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #808080;
+            font-size: 0.9rem;
+        }
+        
+        .ads-txt-link {
+            color: #00d9ff;
+            text-decoration: none;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+        
+        .ads-txt-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Arcade Adventures</h1>
+        <p class="subtitle">Epic Space Adventure Game</p>
+        
+        <p class="description">
+            Embark on an exciting journey through space! Navigate your ship, defeat enemies, 
+            collect power-ups, and unlock challenging bonus levels. Experience smooth gameplay 
+            with stunning visual effects and endless arcade action.
+        </p>
+        
+        <div class="badges">
+            <span class="badge">🎮 Arcade Action</span>
+            <span class="badge">🌟 144 FPS Gameplay</span>
+            <span class="badge">📱 Android</span>
+            <span class="badge">🆓 Free to Play</span>
+        </div>
+        
+        <a href="#" class="download-btn">
+            <span>📱</span>
+            <span>Download on Google Play</span>
+        </a>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-title">Multiple Levels</div>
+                <div class="feature-desc">
+                    Progress through increasingly challenging levels with unique themes and enemies
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">💥</div>
+                <div class="feature-title">Power-Ups</div>
+                <div class="feature-desc">
+                    Collect powerful upgrades including shields, speed boosts, and special weapons
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <div class="feature-title">Bonus Levels</div>
+                <div class="feature-desc">
+                    Unlock secret bonus levels for extra rewards and epic challenges
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">✨</div>
+                <div class="feature-title">Stunning Graphics</div>
+                <div class="feature-desc">
+                    Enjoy smooth animations, particle effects, and dynamic backgrounds
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 Arcade Adventures. All rights reserved.</p>
+            <p>Package: com.adventurer.arc</p>
+            <a href="app-ads.txt" class="ads-txt-link">View app-ads.txt</a>
+            <p style="margin-top: 1rem; font-size: 0.8rem;">
+                Contact: [Tu email] | Privacy Policy | Terms of Service
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
